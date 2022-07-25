@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Document</title>
+
+<style>
+
+div
+{
+border:2px solid red;
+width:300px;
+margin:100px;
+padding:200px;
+}
+.im
+{
+height:300px;
+width:300px;
+}
+
+</style>
+<script>
+function maxSize()
+{
+  
+document.getElementById("Img").style.width = "900px";
+
+document.getElementById("Img").style.height = "900px";
+}
+
+function minSize()
+{
+
+document.getElementById("Img").style.width = "300px";
+
+document.getElementById("Img").style.height = "300px";
+}
+
+
+
+
+
+
+ function handleBtn(cl)
+{
+document.body.style.backgroundColor = cl;
+}
+</script>
+</head>
+<body>
+  <div >
+<button onmouseover="handleBtn('red')">red</button>
+<button onmouseover="handleBtn('pink')">pink</button>
+<button onmouseover="handleBtn('green')">green</button>
+<button onmouseover ="handleBtn('yellow')">yellow</button>
+</div>
+
+<img class="im" src="dress.jpg" id="Img" onmouseover="maxSize()" onmouseout="minSize()">  
+
+
+</body>
+</html>
